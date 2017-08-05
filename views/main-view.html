@@ -1,0 +1,68 @@
+<div class="container">
+
+	<div class="row">
+		<form name="sortType" class="form-horizontal ">
+		<!--<div class="form-group col-sm-6">
+				<label> Sort type 1 </label>
+				<select ng-model="sortType">
+					<option value='descending' > DESC order</option>
+					<option value='ascending' ng-selected="true"> ASC order</option>
+				</select> <span> (Sort by books, houses name and character's alias)</span>
+			</div>-->
+
+			<div class="form-group col-sm-6">
+				<label> Sort type </label>
+				<select ng-model="name">
+					<option value='' > Select </option>
+					<option value='-name' > DESC order</option>
+					<option value='name' > ASC order</option>
+				</select> <span> (Sort by books, house, character name)</span>
+			</div>
+
+			<div class="form-group col-sm-6">
+				<label> Search by Author </label>
+				<input type="text" name="author" ng-model="search.authors">
+			</div>
+			<div class="form-group col-sm-6">
+				<label> Search by Publisher </label>
+				<input type="text" name="publisher" ng-model="search.publisher">
+			</div>
+			<div class="form-group col-sm-6">
+				<label> Search by Book or House Name </label>
+				<input type="text" name="name" ng-model="search.name">
+			</div>
+			<div class="form-group col-sm-6">
+				<label> Filter by Character </label> 
+				<input type="text" name="character" ng-model="search.aliases">
+			</div>
+			<div class="form-group col-sm-6">
+				<label> Search by Character's Gender </label>
+				<input type="text" name="gender" ng-model="search.gender">
+			</div>
+			<div class="form-group col-sm-6">
+				<label> Filter by Region </label>
+				<input type="text" name="region" ng-model="search.region">
+			</div>
+			<div class="form-group col-sm-6">
+				<label> Filter by Culture </label>
+				<input type="text" name="culture" ng-model="search.culture">
+			</div>
+			<div class="col-sm-6">
+				<input type="button" value="Reload" id="button" class="btn btn-info">
+			</div>
+		</form>
+
+		<div class="col-sm-12" style="font-size: 1.1em ;"> 
+			<div style="text-align : center"> <strong> Note1 :</strong> Click on reload to load full data after search is complete
+			</div>
+			<!--<div> <strong> Note2 :</strong> Sort type 1 - Sorting within book, house and character cards without reshuffling them.
+			</div
+			<div> <strong> Note2 :</strong> Sort type - Overall sorting with reshuffling of cards.
+			</div>>-->
+		</div>
+
+	</div>
+	<br><br>
+	<book-directive></book-directive>
+</div>
+    	
