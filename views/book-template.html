@@ -1,4 +1,4 @@
-<div  class="row" ng-repeat= "datum in data  | filter : search | orderBy : name " >
+<div  class="row" ng-repeat= "datum in data  | filter : search | orderBy : name | sortFilter : sortType" >
 	
 	<div ng-if="datum.authors" ng-init="type='books'">
 		<div class="panel panel-primary col-sm-offset-2 col-xs-12 col-sm-8">
@@ -29,7 +29,7 @@
 	<div ng-if="datum.gender" ng-init="type = 'characters'">
 		<div  class="col-md-danger col-sm-offset-2 col-xs-12 col-sm-8 character-card">
 			<div class="head-character-card"><h4> Alias Name - {{datum.aliases[0]}} </h4></div>
-			<div class="card-content" style="color: black;"> 
+			<div class="card-content" style="color : black;"> 
 				<div> Gender - <em>{{datum.gender}}</em> </div>
 				<div ng-if="datum.culture"> Culture - <em>{{datum.culture}}</em> </div>
 				<br>

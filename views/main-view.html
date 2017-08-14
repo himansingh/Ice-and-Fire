@@ -2,18 +2,19 @@
 
 	<div class="row">
 		<form name="sortType" class="form-horizontal ">
-		<!--<div class="form-group col-sm-6">
+		<div class="form-group col-sm-6">
 				<label> Sort type 1 </label>
 				<select ng-model="sortType">
+					<option value='' ng-selected="true"> Select </option>
 					<option value='descending' > DESC order</option>
-					<option value='ascending' ng-selected="true"> ASC order</option>
+					<option value='ascending' > ASC order</option>
 				</select> <span> (Sort by books, houses name and character's alias)</span>
-			</div>-->
+			</div>
 
 			<div class="form-group col-sm-6">
-				<label> Sort type </label>
+				<label> Sort type 2</label>
 				<select ng-model="name">
-					<option value='' > Select </option>
+					<option value='' ng-selected="true"> Select </option>
 					<option value='-name' > DESC order</option>
 					<option value='name' > ASC order</option>
 				</select> <span> (Sort by books, house, character name)</span>
@@ -53,12 +54,12 @@
 		</form>
 
 		<div class="col-sm-12" style="font-size: 1.1em ;"> 
-			<div style="text-align : center"> <strong> Note1 :</strong> Click on reload to load full data after search is complete
+			<div > <strong> Note1 :</strong> Click on reload to load full data after search is complete
 			</div>
-			<!--<div> <strong> Note2 :</strong> Sort type 1 - Sorting within book, house and character cards without reshuffling them.
+			<div> <strong> Note2 :</strong> Sort type 1 - Sorting within book, house and character cards without reshuffling them.
 			</div
-			<div> <strong> Note2 :</strong> Sort type - Overall sorting with reshuffling of cards.
-			</div>>-->
+			<div> <strong> Note3 :</strong> Sort type 2 - Overall sorting with reshuffling of among all cards.
+			</div>
 		</div>
 
 	</div>

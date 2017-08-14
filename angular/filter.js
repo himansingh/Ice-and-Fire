@@ -63,15 +63,12 @@
 	 		});
 
 	 		array3.sort(function( a , b ){
-				var alias1 = a.aliases;
-				var try1 = [];
-				try1.push(alias1[0]);
-				var nameA = alias1[0].toUpperCase(); 
-				// Removing line 67 and 68 throws error in chrome ( but works fine in firefox)
-				// error -> TypeError: Cannot read property '0' of undefined
-				var alias2 = b.aliases;
-				//console.log(alias2[0]);
-				var nameB = alias2[0].toUpperCase() ;
+				
+				var nameA , nameB ;
+				if(a.aliases != undefined )
+				nameA = a.aliases[0].toUpperCase(); 
+				if(b.aliases != undefined)
+				nameB = b.aliases[0].toUpperCase() ;
 
 	 			if(nameA < nameB){
 	 				compare = -1 ;
